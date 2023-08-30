@@ -1,0 +1,36 @@
+.container a h1 {
+  font-family: 'Koulen', cursive;
+  font-size: 50px;
+}
+
+.mainTitle {
+  font-size: 100px;
+  text-align: center;
+  width: 425px;
+  margin: 0;
+  line-height: 100px;
+}
+
+.subTitle {
+  font-size: 40px;
+  letter-spacing: 45px;
+  margin: 0;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 425px;
+}
+
+.koulen {
+  font-family: 'koulen';
+}
+
+.inter {
+  font-family: 'inter';
+}
+
+.Main .article {
+  font-family: 'Inter';
+  font-weight: 100;
+  font-size: 12px;
+}

@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const Header = styled.section`
   text-align: center;
-  font-family: 'Gugi';
   width: 100%;
   height: 80vh;
   position: relative;
@@ -32,6 +31,11 @@ export const Header = styled.section`
 export const MainHeader = styled.div`
   position: relative;
   z-index: 1;
-  max-width: 500px;
+  /* max-width: 500px; */
+  flex-direction: column;
   background-color: transparent;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 `

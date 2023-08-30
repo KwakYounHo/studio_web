@@ -8,8 +8,9 @@ const Main: React.FC<Props> = () => {
     <Container className="Main">
       <Header>
         <MainHeader>
-          <h1>Studio CLIP</h1>
-          <h2>스튜디오 클립</h2>
+          <h1 className='mainTitle koulen'>Studio CLIP</h1>
+          <h2 className='subTitle koulen'>Myanmar</h2>
+          <p className='article'>STUDIO CLIP Corp.<br />Room No.(I), 7th floor, Royal Mg Bamar Residence, Dhamar Yone Street, Hlaing, Yangon, Myanmar<br />http://studioclip.video | +09 88413 9136</p>
         </MainHeader>
       </Header>
     </Container>
