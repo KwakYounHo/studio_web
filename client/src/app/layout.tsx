@@ -1,9 +1,14 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Koulen } from 'next/font/google'
+import { Koulen, Inter } from 'next/font/google'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const koulen = Koulen({
+  subsets: ['latin'],
+  weight: ['400']
+})
+const inter = Inter({
   subsets: ['latin'],
   weight: ['400']
 })
@@ -22,12 +27,32 @@ export default function RootLayout({
     <html lang="my">
       <body>
         <header>
-          <Link href='/'>
-            <h1 className={`${koulen.className} mainTitle`}>STUDIO CLIP</h1>
-          </Link>
+          <div className="logo">
+            <Link href='/'>
+              <h1 className={`${koulen.className} mainTitle`}>STUDIO CLIP</h1>
+              <h2 className={`${koulen.className} subTitle`}>Myanmar</h2>
+            </Link>
+          </div>
+          <div className={`${inter.className} nav`}>
+            <Link href='/about'>about</Link>
+            <Link href='#'>사업분야</Link>
+            <Link href='#'>portfolio</Link>
+            <Link href='#'>contact</Link>
+          </div>
+          <div className="social">
+            <Link href='#'><div className="socialBox"><Image src='/instar_50px.png' width={50} height={50} alt='instargram' /></div></Link>
+            <Link href='#'><div className="socialBox"><Image src='/facebook_50px.png' width={50} height={50} alt='facebook' /></div></Link>
+            <Link href='#'><div className="socialBox"><Image src='/youtube_50px.png' width={50} height={50} alt='youtube' /></div></Link>
+            <Link href='#'><div className="socialBox"><Image src='/tiktok_50px.png' width={50} height={50} alt='tiktok' /></div></Link>
+          </div>
         </header>
         {children}
-        <footer></footer>
+        <footer>
+          <p className={`${inter.className}`}>
+            STUDIO CLIP Corp.<br />Royal Mg Bamar Residence, Dhamar Yone Street, Hlaing, Yangon, Myanmar
+            http://studioclip.video | +09 88413 9136
+          </p>
+        </footer>
       </body>
     </html>
   )
