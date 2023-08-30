@@ -10,7 +10,8 @@ const Main: React.FC<Props> = () => {
         <MainHeader>
           <h1 className='mainTitle koulen'>Studio CLIP</h1>
           <h2 className='subTitle koulen'>Myanmar</h2>
-          <p className='article'>STUDIO CLIP Corp.<br />Room No.(I), 7th floor, Royal Mg Bamar Residence, Dhamar Yone Street, Hlaing, Yangon, Myanmar<br />http://studioclip.video | +09 88413 9136</p>
+          <h3 className='waitOpen koulen'>scheduled to open</h3>
+          <p className='article'>STUDIO CLIP Corp.<br />Royal Mg Bamar Residence, Dhamar Yone Street, Hlaing, Yangon, Myanmar<br />http://studioclip.video | +09 88413 9136</p>
         </MainHeader>
       </Header>
     </Container>

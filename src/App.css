@@ -21,6 +21,10 @@
   width: 425px;
 }
 
+.waitOpen {
+  font-size: 100px;
+}
+
 .koulen {
   font-family: 'koulen';
 }
