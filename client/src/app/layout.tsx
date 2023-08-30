@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Koulen } from 'next/font/google'
+import Link from 'next/link'
 
 const koulen = Koulen({
   subsets: ['latin'],
@@ -19,7 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="my">
-      <body className={koulen.className}>{children}</body>
+      <body>
+        <header>
+          <Link href='/'>
+            <h1 className={`${koulen.className} mainTitle`}>STUDIO CLIP</h1>
+          </Link>
+        </header>
+        {children}
+        <footer></footer>
+      </body>
     </html>
   )
 }
