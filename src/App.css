@@ -1,6 +1,6 @@
 .container a h1 {
   font-family: 'Koulen', cursive;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 .mainTitle {
@@ -37,4 +37,25 @@
   font-family: 'Inter';
   font-weight: 100;
   font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .container a h1 {
+    font-size: 2rem;
+  }
+  .mainTitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .subTitle {
+    font-size: 2rem;
+    letter-spacing: 1.6rem;
+  }
+  .waitOpen {
+    font-size: 3rem;
+  }
+  .article {
+    font-size: 0.1rem;
+  }
 }
